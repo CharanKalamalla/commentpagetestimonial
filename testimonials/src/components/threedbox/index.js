@@ -1,11 +1,25 @@
 import React from 'react';
-import Card from "../card"
+
+
+
+import { MainContainers } from "./styledComponents"
+
+import {Button} from "./styledComponents"
+
+import {Name} from "./styledComponents"
+
+import {Role} from "./styledComponents"
+
+import {Discription} from "./styledComponents"
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-creative';
+
+import "./index.css"
 
 
 // import required modules
@@ -34,11 +48,74 @@ const slider = () => {
         className="mySwiper6"
       >
         <SwiperSlide>
-             <ul>
-               <Card/>
-             </ul>
+        <MainContainers>
+                <Name>
+                    Naqush Shahid
+                </Name>
+                <Role>
+                    CEO Tech Industry
+                </Role>
+                <Discription>
+                    The Slider is simply amazing. The aninimation addition of slides and & drop features really simplified the whole process
+                </Discription>
+                <div className='star'>
+                ⭐⭐⭐⭐⭐</div>
+                <Button>
+                   View All </Button>      
+            </MainContainers>
         </SwiperSlide>
-        
+        <SwiperSlide>
+        <MainContainers className='comment-box'>
+                <Name>
+                    Naqush Shahid
+                </Name>
+                <Role>
+                    CEO Tech Industry
+                </Role>
+                <Discription>
+                    The Slider is simply amazing. The aninimation addition of slides and & drop features really simplified the whole process
+                </Discription>
+                <div className='star'>
+                ⭐⭐⭐⭐⭐</div>   
+                <Button>
+                   View All </Button>
+                  
+            </MainContainers>
+        </SwiperSlide>
+        <SwiperSlide>
+        <MainContainers>
+                <Name>
+                    Naqush Shahid
+                </Name>
+                <Role>
+                    CEO Tech Industry
+                </Role>
+                <Discription>
+                    The Slider is simply amazing. The aninimation addition of slides and & drop features really simplified the whole process
+                </Discription>
+                <div className='star'>
+                ⭐⭐⭐⭐⭐</div>
+                <Button>
+                   View All </Button>        
+            </MainContainers>
+        </SwiperSlide>
+        <SwiperSlide>
+        <MainContainers>
+                <Name>
+                    Naqush Shahid
+                </Name>
+                <Role>
+                    CEO Tech Industry
+                </Role>
+                <Discription>
+                    The Slider is simply amazing. The aninimation addition of slides and & drop features really simplified the whole process
+                </Discription>
+                <div className='star'>
+                ⭐⭐⭐⭐⭐</div>
+                <Button>
+                   View All </Button>        
+            </MainContainers>
+        </SwiperSlide>
       </Swiper>
         </>
     )

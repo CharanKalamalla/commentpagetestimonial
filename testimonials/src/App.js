@@ -1,7 +1,4 @@
-import Testimonials from "./components/Testimonials"
+import Testimonials from "./components/Testimonials";
 
-const App = () => {
- <Testimonials/>
-
-}
-export default App
+const App = () => <Testimonials />;
+export default App;

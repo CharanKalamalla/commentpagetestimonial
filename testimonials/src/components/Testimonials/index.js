@@ -1,8 +1,7 @@
 import { Component } from "react";
 
-import Slider from "../threedbox"
 
-
+import Threedbox from "../threedbox"
 
 import {MainContainer} from "./styledComponents"
 
@@ -41,8 +40,9 @@ class Testimonials extends Component {
             </Desc>
           </StoriesContainer>
           <div>
-            <Slider/>
+            <Threedbox/>
           </div>
+          
         </TopContainer>
         <BottomCon>
           <Image
@@ -64,4 +64,5 @@ class Testimonials extends Component {
     );
   }
 }
-export default Testimonials
+
+export default Testimonials;
