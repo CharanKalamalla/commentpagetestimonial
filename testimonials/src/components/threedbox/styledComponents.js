@@ -26,6 +26,7 @@ background-color: white;
 }
 `
 
+
 export const Name = styled.p`
 color:black;
 font-size: 22px;

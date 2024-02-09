@@ -4,6 +4,9 @@ import React from 'react';
 
 import { MainContainers } from "./styledComponents"
 
+
+
+
 import {Button} from "./styledComponents"
 
 import {Name} from "./styledComponents"
@@ -19,16 +22,17 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-creative';
 
-import "./index.css"
+
 
 
 // import required modules
 import { EffectCreative } from 'swiper/modules';
+import styled from 'styled-components';
 
 const slider = () => {
     return (
         <>
-        <Swiper
+        <Swipers
         grabCursor={true}
         effect={'creative'}
         creativeEffect={{
@@ -47,7 +51,7 @@ const slider = () => {
         modules={[EffectCreative]}
         className="mySwiper6"
       >
-        <SwiperSlide>
+        <SwiperSlides>
         <MainContainers>
                 <Name>
                     Naqush Shahid
@@ -63,8 +67,8 @@ const slider = () => {
                 <Button>
                    View All </Button>      
             </MainContainers>
-        </SwiperSlide>
-        <SwiperSlide>
+        </SwiperSlides>
+        <SwiperSlides>
         <MainContainers className='comment-box'>
                 <Name>
                     Naqush Shahid
@@ -81,8 +85,8 @@ const slider = () => {
                    View All </Button>
                   
             </MainContainers>
-        </SwiperSlide>
-        <SwiperSlide>
+        </SwiperSlides>
+        <SwiperSlides>
         <MainContainers>
                 <Name>
                     Naqush Shahid
@@ -98,8 +102,8 @@ const slider = () => {
                 <Button>
                    View All </Button>        
             </MainContainers>
-        </SwiperSlide>
-        <SwiperSlide>
+        </SwiperSlides>
+        <SwiperSlides>
         <MainContainers>
                 <Name>
                     Naqush Shahid
@@ -115,11 +119,24 @@ const slider = () => {
                 <Button>
                    View All </Button>        
             </MainContainers>
-        </SwiperSlide>
-      </Swiper>
+        </SwiperSlides>
+      </Swipers>
         </>
     )
 
 }
 
 export default slider
+
+const Swipers = styled(Swiper)`
+margin: 100px auto;
+  width: 320px;
+  height: 240px;
+`
+const SwiperSlides = styled(SwiperSlide)`
+display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;`
